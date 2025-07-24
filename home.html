@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> House Maids</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f5f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #2a9d8f;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin-bottom: 0.40px;
+      font-size: 40px;
+    }
+
+    header p {
+      font-size: 30px;
+    }
+
+    .hero-btn {
+      background: #fff;
+      color: #2a9d8f;
+      border: none;
+      padding: 7px 10px;
+      border-radius: 25px;
+      font-size: 15px;
+      margin-top: 30px;
+    }
+
+    .section {
+      padding: 0px 20px;
+    }
+
+    .section h2 {
+      margin-bottom: 100px;
+      font-size: 40px;
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px,));
+      gap: 1px;
+      justify-items: center;
+    }
+
+    .card {
+      background: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgb(0,0,0,0.1);
+      text-align: center;
+      width: 100%;
+    }
+
+    .card img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 50px;
+      border-radius: 50%;
+    }
+
+    .card h4 {
+      margin: 5px;
+    }
+
+    .card p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .how-works, .why-choose {
+      background: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 0 2px 5px rgb(0,0,0,0.05);
+      text-align: ;
+    }
+
+    .how-works ol {
+      padding-left: 20px;
+      color: #333;
+    }
+
+    .cities {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .city {
+      background: #b5e8e2;
+      padding: 15px 10px;
+      border-radius: 20px;
+      font-size: 19px;
+    }
+
+    .testimonials {
+      background: white;
+      padding: 30px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgb(0,0,0,0.1);
+    }
+
+    .testimonials p {
+      font-style: italic;
+      color: #555;
+      margin-bottom: ;
+    }
+
+    .testimonials h4 {
+      text-align: right;
+      font-size: 10px;
+      margin: 0;
+    }
+
+    .cta-buttons {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .cta-buttons a {
+      display: inline-block;
+      margin: 0;
+      padding: 20px;
+      background-color: #2a9d8f;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 15px;
+    }
+
+    footer {
+      background: #2a9d8f;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>House Maid</h1>
+  <p>Hire Trusted Home Maids Near You</p>
+</header>
+
+<section class="section">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://img.icons8.com/ios-filled/50/broom.png" alt="Cleaning">
+      <p>Cleaning</p>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/ios-filled/50/chef-hat.png" alt="Cooking">
+      <p>Cooking</p>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/ios-filled/50/baby.png" alt="Babysitting">
+      <p>Babysitting</p>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/ios-filled/50/home.png" alt="Live-in Help">
+      <p>Full-time Help</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Featured Maids</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maid">
+      <h4>Rani Kumari</h4>
+      <p>Cleaning & Cooking, Delhi</p>
+    </div>
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/women/62.jpg" alt="Maid">
+      <h4>Sunita Devi</h4>
+      <p>Babysitting, Mumbai</p>
+    </div>
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/women/86.jpg" alt="Maid">
+      <h4>Laxmi Yadav</h4>
+      <p>24hr Maid, Bangalore</p>
+    </div>
+  </div>
+</section>
+
+<section class="section how-works">
+  <h2>How It Works</h2>
+  <ol>
+    <li>Browse maid categories</li>
+    <li>Select a trusted maid</li>
+    <li>Request booking</li>
+    <li>Pay & track services</li>
+  </ol>
+</section>
+
+<section class="section why-choose">
+  <h2>Why Choose MaidEase?</h2>
+  <ul>
+    <li>✅ Verified & Background-Checked Maids</li>
+    <li>✅ Affordable Monthly & Hourly Plans</li>
+    <li>✅ Trusted by 10,000+ Households</li>
+    <li>✅ Instant Support & Replacements</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Service Available In</h2>
+  <div class="cities">
+    <div class="city">Delhi</div>
+    <div class="city">Mumbai</div>
+    <div class="city">Bangalore</div>
+    <div class="city">Kolkata</div>
+    <div class="city">Hyderabad</div>
+    <div class="city">Chennai</div>
+  </div>
+</section>
+
+<section class="section testimonials">
+  <h2>What Clients Say</h2>
+  <p>"The app is so smooth! I found a reliable maid in less than 10 minutes!"</p>
+  <h4>- Meena S., Mumbai</h4>
+</section>
+
+<div class="cta-buttons">
+  <a href="book.html">Book a Maid</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+
+<footer>
+  &copy; 2025 Housemaid | support@housemaid.com | +91-9999955555
+</footer>
+
+</body>
+</html>
