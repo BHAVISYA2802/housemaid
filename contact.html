@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f0f4f8;
+      color: #1e293b;
+    }
+
+    header {
+      background-color: #1e293b;
+      color: white;
+      padding: 19.2px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #cbd5ff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 14.4px;
+    }
+
+    .container {
+      padding: 24px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1e293b;
+      margin-bottom: 19.2px;
+    }
+
+    .contact-info {
+      background: #ffffff;
+      padding: 16px;
+      border-radius: 10px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 5px rgb(0,0,0,0.08);
+    }
+
+    .contact-info h4 {
+      margin-top: 0;
+      color: #0f172a;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6.4px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 11.2px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: 15.2px;
+    }
+
+    button {
+      background-color: #1e293b;
+      color: white;
+      border: none;
+      padding: 12.8px 19.2px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 16px;
+      width: 100%;
+    }
+
+    footer {
+      background-color: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      font-size: 14.4px;
+      margin-top: 32px;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Housemaids</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="book-maid.html">Book</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>📞 Contact Us</h2>
+
+  <div class="contact-info">
+    <h4>Customer Support</h4>
+    <p>📧 Email: support@housemaids.in</p>
+    <p>📱 Phone: +91 99999 55555</p>
+    <p>🕒 Support Hours: Mon-Sat, 9 AM to 7 PM</p>
+  </div>
+
+  <div class="contact-info">
+    <h4>Corporate Office</h4>
+    <p>Housemaids Pvt. Ltd.</p>
+    <p> 3rd Floor, Preet vihar, New Delhi - 110001</p>
+    <p> Mumbai, India</p>
+  </div>
+
+  <form action="#" method="POST" class="contact-form">
+    <div class="form-group">
+      <label for="name">Your Full Name</label>
+      <input type="text" id="name" name="name" placeholder="e.g., Bhavisya" required />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Your Email Address</label>
+      <input type="email" id="email" name="email" placeholder="e.g., Bhavisya@gmail.com" required />
+    </div>
+
+    <div class="form-group">
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="e.g., Feedback, Complaint, Help" required />
+    </div>
+
+    <div class="form-group">
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+    </div>
+
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+<footer>
+&copy; 2025 Housemaids Pvt. Ltd. — Trusted by thousands of households across India.
+</footer>
+
+</body>
+</html>
