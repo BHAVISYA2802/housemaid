@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Reviews</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f9fafb;
+      color: #1e293b;
+    }
+
+    header {
+      background-color: #1e293b;
+      color: white;
+      padding: 19.2px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #e0e7ff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 14.4px;
+    }
+
+    .container {
+      padding: 24px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1e293b;
+      margin-bottom: 16px;
+    }
+
+    .review {
+      background: #f1f5f9;
+      border-radius: 10px;
+      padding: 16px;
+      margin-bottom: 19.2px;
+      box-shadow: 0 2px 4px rgb(0,0,0,0.05);
+    }
+
+    .stars {
+      color: #facc15;
+      font-size: 19.2px;
+    }
+
+    .user {
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    .maid {
+      font-size: 14.4px;
+      color: #475569;
+    }
+
+    .add-review {
+      background: #e0f2fe;
+      padding: 16px;
+      border-radius: 10px;
+      margin-top: 32px;
+    }
+
+    .add-review input, .add-review textarea {
+      width: 100%;
+      padding: 11.2px;
+      margin-top: 8px;
+      border-radius: 5px;
+      border: 1px solid #cbd5e1;
+    }
+
+    .add-review button {
+      margin-top: 16px;
+      padding: 11.2px 19.2px;
+      background-color: #1e293b;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      font-size: 14.4px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Housemaids</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="book-maid.html">Book</a>
+    <a href="reviews.html">Reviews</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>⭐ Customer Reviews</h2>
+
+  <div class="review">
+    <div class="stars">★★★★★</div>
+    <p>"We hired Kavita for daily cooking and she’s been amazing! Always punctual and cooks hygienic, tasty food."</p>
+    <div class="user">– Meera S., Mumbai</div>
+    <div class="maid">Maid: Kavita Sharma | Service: Cooking</div>
+  </div>
+
+  <div class="review">
+    <div class="stars">★★★★☆</div>
+    <p>"Maid arrived on time and did a great job with deep cleaning our kitchen. App was easy to use."</p>
+    <div class="user">– Aarav Mehta, Delhi</div>
+    <div class="maid">Maid: Rinku Das | Service: Deep Cleaning</div>
+  </div>
+
+  <div class="review">
+    <div class="stars">★★★★★</div>
+    <p>"We use Housemaids weekly for babysitting. All maids are verified and very respectful with kids."</p>
+    <div class="user">– Priyanka Nair, Bangalore</div>
+    <div class="maid">Maid: Jaya Rani | Service: Babysitting</div>
+  </div>
+
+  <div class="review">
+    <div class="stars">★★★☆☆</div>
+    <p>"The booking was smooth, but maid was 10 minutes late. Otherwise good work."</p>
+    <div class="user">– Rohit B., Hyderabad</div>
+    <div class="maid">Maid: Sheela M. | Service: Dusting</div>
+  </div>
+
+  <div class="add-review">
+    <h3>📝 Leave a Review</h3>
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" placeholder="e.g., Anjali Singh">
+
+    <label for="maid">Maid's Name:</label>
+    <input type="text" id="maid" placeholder="e.g., Reena Kumari">
+
+    <label for="service">Service Type:</label>
+    <input type="text" id="service" placeholder="e.g., Cooking, Cleaning, Babysitting">
+
+    <label for="message">Your Review:</label>
+    <textarea id="message" rows="4" placeholder="Share your honest feedback..."></textarea>
+
+    <button>Submit Review</button>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Housemaids Pvt. Ltd. — Trusted by thousands of households across India.
+</footer>
+
+</body>
+</html>
