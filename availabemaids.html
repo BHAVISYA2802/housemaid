@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Available Maids</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8fafc;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 19.2px;
+      text-decoration: none;
+    }
+
+    .section {
+      padding: 32px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1e293b;
+    }
+
+    .filter-bar {
+      max-width: 700px;
+      margin: 32px auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    select, input {
+      padding: 9.6px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      min-width: 200px;
+    }
+
+    .maid-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .maid-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgb(0,0,0,0.08);
+    }
+
+    .maid-card img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+    }
+
+    .maid-info {
+      padding: 16px;
+    }
+
+    .maid-info h3 {
+      margin: 8px 0;
+    }
+
+    .maid-info p {
+      margin: 4.8px 0;
+      font-size: 15.2px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 8px;
+      background: #2563eb;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      background: #0f172a;
+      color: white;
+      padding: 16px;
+      margin-top: 48px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div><strong>Housemaids</strong></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">Book</a>
+  </nav>
+</header>
+
+<section class="section">
+  <h2>Available Maids Near You</h2>
+
+  <div class="filter-bar">
+    <input type="text" placeholder="Search by name or city">
+    <select>
+      <option>Filter by Service</option>
+      <option>Cooking</option>
+      <option>Cleaning</option>
+      <option>Babysitting</option>
+      <option>Elderly Care</option>
+    </select>
+    <select>
+      <option>Sort by Rating</option>
+      <option>Highest First</option>
+      <option>Lowest First</option>
+    </select>
+  </div>
+
+  <div class="maid-grid">
+    <div class="maid-card">
+      <img src="https://i.pinimg.com/736x/fe/b3/ec/feb3ecfebc3b0eacd39968d17bc023e3.jpg" alt="Maid">
+      <div class="maid-info">
+        <h3>Kavita Joshi</h3>
+        <p>Experience: 7 years | Pune</p>
+        <p>Services: Elderly Care, Cleaning</p>
+        <p>Languages: Hindi, Marathi</p>
+        <p>Rating: ⭐⭐⭐⭐⭐</p>
+        <a href="#" class="cta-button">Book Now</a>
+      </div>
+    </div>
+
+    <div class="maid-card">
+      <img src="https://i.pinimg.com/736x/68/e8/3a/68e83abfed77b607300b228626adca1f.jpg" alt="Maid">
+      <div class="maid-info">
+        <h3>Rina Kumari</h3>
+        <p>Experience: 4 years | Delhi</p>
+        <p>Services: Babysitting, Cooking</p>
+        <p>Languages: Hindi, Punjabi</p>
+        <p>Rating: ⭐⭐⭐⭐</p>
+        <a href="#" class="cta-button">Book Now</a>
+      </div>
+    </div>
+
+    <div class="maid-card">
+      <img src="https://i.pinimg.com/736x/0d/1d/0b/0d1d0b38db50d3ace3e74ac3336543c7.jpg" alt="Maid">
+      <div class="maid-info">
+        <h3>Fatima Shaikh</h3>
+        <p>Experience: 6 years | Hyderabad</p>
+        <p>Services: Cooking, Cleaning</p>
+        <p>Languages: Urdu, Telugu</p>
+        <p>Rating: ⭐⭐⭐⭐⭐</p>
+        <a href="#" class="cta-button">Book Now</a>
+      </div>
+    </div>
+
+    <div class="maid-card">
+      <img src="https://i.pinimg.com/736x/fe/3f/29/fe3f29bf429ce0ca14ea299a8cf00134.jpg" alt="Maid">
+      <div class="maid-info">
+        <h3>Lakshmi Menon</h3>
+        <p>Experience: 4 years | Chennai</p>
+        <p>Services: Live-in Maid, Cooking</p>
+        <p>Languages: Tamil, English</p>
+        <p>Rating: ⭐⭐⭐</p>
+        <a href="#" class="cta-button">Book Now</a>
+      </div>
+    </div>
+
+    <div class="maid-card">
+      <img src="https://i.pinimg.com/1200x/c3/c3/10/c3c310d0dac45f2bcddf37f85ad39c27.jpg" alt="Maid">
+      <div class="maid-info">
+        <h3>jaspreet</h3>
+        <p>Experience: 2 years | Delhi</p>
+        <p>Services: Live-in Maid, Cooking</p>
+        <p>Languages: Hindi, English</p>
+        <p>Rating: ⭐⭐⭐⭐</p>
+        <a href="#" class="cta-button">Book Now</a>
+      </div>
+    </div>
+
+
+    <div class="maid-card">
+      <img src="https://i.pinimg.com/1200x/a2/21/eb/a221ebec25b3a17a9b67f5ebfad7fcc3.jpg" alt="Maid">
+      <div class="maid-info">
+        <h3>Bhoomika</h3>
+        <p>Experience: 7 years | Chennai</p>
+        <p>Services: Live-in Maid, Cooking</p>
+        <p>Languages: Tamil, English</p>
+        <p>Rating: ⭐⭐⭐☆</p>
+        <a href="#" class="cta-button">Book Now</a>
+      </div>
+    </div>
+
+
+    <div class="maid-card">
+      <img src="https://i.pinimg.com/736x/4b/a6/9d/4ba69d952ddb4a5fdea16e52fa08fb07.jpg" alt="Maid">
+      <div class="maid-info">
+        <h3>Aayushi Sharma</h3>
+        <p>Experience: 3 years | Bangalore</p>
+        <p>Services: Live-in Maid, Cooking</p>
+        <p>Languages: English</p>
+        <p>Rating: ⭐⭐⭐⭐☆</p>
+        <a href="#" class="cta-button">Book Now</a>
+      </div>
+    </div>
+
+
+    <div class="maid-card">
+      <img src="https://i.pinimg.com/736x/c2/ba/03/c2ba034bb32be1e3d20de5d0545ebe2e.jpg" alt="Maid">
+      <div class="maid-info">
+        <h3>Menon</h3>
+        <p>Experience: 9 years | Karnataka</p>
+        <p>Services: Live-in Maid, Cooking</p>
+        <p>Languages: Tamil</p>
+        <p>Rating: ⭐⭐⭐☆</p>
+        <a href="#" class="cta-button">Book Now</a>
+      </div>
+    </div>
+
+
+
+    <div class="maid-card">
+      <img src="https://i.pinimg.com/1200x/1b/46/96/1b4696dce9a7fec8428e5ef4532d5938.jpg" alt="Maid">
+      <div class="maid-info">
+        <h3>Anushka</h3>
+        <p>Experience: 5 years | Mathura</p>
+        <p>Services: Live-in Maid, Cooking</p>
+        <p>Languages: Hindi </p>
+        <p>Rating: ⭐⭐☆</p>
+        <a href="#" class="cta-button">Book Now</a>
+      </div>
+    </div>
+
+
+
+    <div class="maid-card">
+      <img src="https://i.pinimg.com/1200x/40/e3/87/40e38769a55c2195bd309206f4318fdf.jpg" alt="Maid">
+      <div class="maid-info">
+        <h3>Radhika</h3>
+        <p>Experience: 3 years | Dheradun</p>
+        <p>Services: Live-in Maid, Cooking</p>
+        <p>Languages: Hindi, English</p>
+        <p>Rating: ⭐⭐⭐⭐</p>
+        <a href="#" class="cta-button">Book Now</a>
+      </div>
+    </div>
+
+
+
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Housemaids Pvt. Ltd. — Trusted by thousands of households across India.
+</footer>
+
+</body>
+</html>
